@@ -28,16 +28,20 @@ $ sudo -u existdb /usr/local/lib/exist/bin/startup.sh &
 ```
 
 # Usage
-You **must** activate the Python virtual environment before running any of the pulfamanager Python scripts: to activate the Python virtual environment, make sure you are in /usr/local/bin/pulfamanager and then type the following at the bash prompt:
+You **must** activate the Python virtual environment before running any of the pulfamanager Python scripts: to activate the Python virtual environment, make sure you are in /usr/local/bin/pulfamanager.
 
 ``` sh
+$ cd /usr/local/bin/pulfamanager
 $ source venv/bin/activate
 ```
 
 ## Loading Individual Records
-To load individual records into eXist and the solr index, become the pulfa user (using the standard credentials) and go to the `/usr/local/bin/pulfamanager` directory. Make sure the virtual environment has been activated. Then type
+To load individual records into eXist and the solr index, become the pulfa user (using the standard credentials) and go to the `/usr/local/bin/pulfamanager` directory. Make sure the virtual environment has been activated.
 
 ``` sh
+$ su pulfa
+$ cd /usr/local/bin/pulfamanager
+$ source venv/bin/activate
 $ python load_record.py path/to/record
 ```
 
