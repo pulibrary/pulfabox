@@ -5,7 +5,7 @@ A Vagrant file for creating a VM for working on the pulfa codebase
   * Vagrant
   * a clone of [the pulfa codebase](https://github.com/pulibrary/pulfa)
   * a working copy of the findingaids data
-  
+
 # Configuration
 You **must** edit the Vagrantfile and configure the synced folders.  See instructions in the Vagrantfile.
 
@@ -50,3 +50,9 @@ where <kbd>path/to/record</kbd> is the file path to the record you wish to load.
 ``` sh
 $ python load_record.py /data/eads/lae/LAE001.EAD.xml
 ```
+## Logs
+For debugging eXist XSLT errors:
+```/usr/local/lib/exist/webapp/WEB-INF/logs```
+
+For debugging eXist Web Server errors:
+```/var/logs/exist```
