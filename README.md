@@ -51,5 +51,8 @@ where <kbd>path/to/record</kbd> is the file path to the record you wish to load.
 $ python load_record.py /data/eads/lae/LAE001.EAD.xml
 ```
 ## Logs
-For debugging eXist XSLT errors: `/usr/local/lib/exist/webapp/WEB-INF/logs`
-For debugging eXist Web Server errors: `/var/logs/exist`
+For debugging eXist XSLT errors:
+```/usr/local/lib/exist/webapp/WEB-INF/logs```
+
+For debugging eXist Web Server errors:
+```/var/logs/exist```
