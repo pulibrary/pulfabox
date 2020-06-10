@@ -35,8 +35,19 @@ $ cd /usr/local/bin/pulfamanager
 $ source venv/bin/activate
 ```
 
+## Loading All Records
+To load all records (collections, names, and folders) into eXist and the solr index, become the pulfa user (using the standard credentials) and go to the `/usr/local/bin/pulfamanager` directory. Make sure the virtual environment has been activated; then run `load.py`:
+
+``` sh
+$ su pulfa
+$ cd /usr/local/bin/pulfamanager
+$ source venv/bin/activate
+$ python load.py
+```
+
+
 ## Loading Individual Records
-To load individual records into eXist and the solr index, become the pulfa user (using the standard credentials) and go to the `/usr/local/bin/pulfamanager` directory. Make sure the virtual environment has been activated.
+To load individual records into eXist and the solr index, become the pulfa user (using the standard credentials) and go to the `/usr/local/bin/pulfamanager` directory. Make sure the virtual environment has been activated; then run `load_record.py`:
 
 ``` sh
 $ su pulfa
@@ -50,9 +61,14 @@ where <kbd>path/to/record</kbd> is the file path to the record you wish to load.
 ``` sh
 $ python load_record.py /data/eads/lae/LAE001.EAD.xml
 ```
-## Logs
-For debugging eXist XSLT errors:
-```/usr/local/lib/exist/webapp/WEB-INF/logs```
 
-For debugging eXist Web Server errors:
+## Logs
+  * Pulfamanager writes logs to `/var/log/pulfa`.
+  * For debugging eXist Web Server errors: `/var/log/existdb`
+  * Solr errors: `/var/log/solr`
+  * For debugging pulfa application errors (e.g., eXist XSLT errors): `/usr/local/lib/exist/webapp/WEB-INF/logs`
+
+
+
+
 ```/var/logs/exist```
