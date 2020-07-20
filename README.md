@@ -19,7 +19,11 @@ $ vagrant up
 
 (NB: do not type the <kbd>$</kbd> character; that's the shell prompt. It's printed here to show you what your command line should look like.)
 
-When vagrant has finished building the VM, type `vagrant ssh` to connect to the running VM.
+When vagrant has finished building the VM, type 
+
+```vagrant ssh```
+
+to connect to the running VM.
 
 Solr and eXistdb should both be running after you've built the machine.  Should you ever need to restart the VM, you will have to restart eXistdb manually; to do so, type this at the commandline:
 
